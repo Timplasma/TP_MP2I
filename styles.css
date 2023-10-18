@@ -4,6 +4,7 @@ body {
 
 header {
     text-align: center;
+    font-family: Impact;
 }
 
 .container {
@@ -19,7 +20,7 @@ header {
 }
 
 .toggle-button {
-    background-color: #007bff;
+    background-color: black;
     color: #fff;
     border: none;
     padding: 5px 10px;
@@ -27,15 +28,17 @@ header {
 }
 
 .toggle-button:hover {
-    background-color: #0056b3;
+    background-color: rgb(44, 44, 44);
 }
 
 .file-list {
     display: none;
     margin-top: 10px;
+    color: black;
 }
 
 a {
     display: block;
     margin: 5px 0;
+    color: black;
 }
