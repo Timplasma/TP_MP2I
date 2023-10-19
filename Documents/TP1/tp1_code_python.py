@@ -3,20 +3,26 @@ import numpy as np
 from numpy.random import *
 import matplotlib.pyplot as plt
 import csv
+import os
 
 import matplotlib_inline.backend_inline as bckend
 bckend.set_matplotlib_formats('svg')
 
+# Chemin absolu du répertoire du script
+script_directory = os.path.dirname(os.path.abspath(__file__))
 
-def lire_fichier_csv(parametre):
+# Chemin complet du fichier "data.csv"
+file_path = os.path.join(script_directory, "data.csv")
+
+def lire_fichier_csv():
     liste = []
-    with open(parametre, "r") as fichier_csv:
+    with open(file_path, "r") as fichier_csv:
         reader_notes = csv.reader(fichier_csv)
         for ligne in reader_notes:
             liste.append(ligne)
     return liste
 
-table_data = lire_fichier_csv('Data.csv')
+table_data = lire_fichier_csv()
 
 #print(table_data[4][0])
 
@@ -76,7 +82,7 @@ for i in range(Nsim):
     b_sim.append(b)
 
 u_a=np.std(a_sim)
-u_b=np.std(b)
+u_b=np.std(b_sim)
 
 
 plt.figure(figsize=(8,6))

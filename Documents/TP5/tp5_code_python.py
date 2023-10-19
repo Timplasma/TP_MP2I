@@ -58,12 +58,12 @@ plt.plot(intensite_r100, tension_r100, 'r+-', lw=0.5, label="Résistence de 100 
 plt.legend()
 plt.show()
 
-plt.plot(intensite_r1000, tension_r1000, 'b', lw=0.5, label="Résistence de 1000 Ohm")
+plt.plot(intensite_r1000, tension_r1000, 'b+-', lw=0.5, label="Résistence de 1000 Ohm")
 
 plt.legend()
 plt.show()
 
-plt.plot(intensite_r10e6, tension_r10e6, 'g', lw=0.5, label="Résistence de 10e6 Ohm")
+plt.plot(intensite_r10e6, tension_r10e6, 'g+-', lw=0.5, label="Résistence de 10e6 Ohm")
 
 plt.legend()
 plt.show()
